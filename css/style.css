@@ -1,0 +1,497 @@
+@charset    "UTF-8";
+
+.centerbox    {
+    width: 1340px;
+    margin: 0 auto;
+}
+
+/* header */
+#header {
+    width: 100%;
+    height: 227px;
+    position: relative;
+}
+/* #header .lang_box {
+    width: 150px;
+    height: 45px;
+    background: lightblue;
+    float: left;
+}
+#header .lang_box a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 45px
+}
+#header .lang_box .lang {
+    background: #fff;
+    position: absolute;
+    width: 150px;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.1);
+    } */
+#header .login_box  {
+    width: 200px;
+    height: 40px;
+    float: right;
+    text-align: right;
+}
+#header .login_box a    {
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'TTLaundryGothicR';
+    padding: 0 20px;
+}
+#header h1  {
+    width: 180px;
+    height: 65px;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    margin-left: -90px;
+}
+#header .gnb    {
+    width: 100%;
+    height: 105px;
+    float: left;
+    margin-top: 82px;
+}
+#header .gnb li {
+    position: relative;
+    display: inline-block;
+}
+
+#header .gnb li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #fff799;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+    z-index: -1;
+}
+
+#header .gnb li:hover::before {
+    width: 50px;  /* 원하는 원의 크기 */
+    height: 50px; /* 원하는 원의 크기 */
+}
+#header .gnb li {
+    float: left;
+    line-height: 105px;
+    font-size: 26px;
+    font-family: 'TTLaundryGothicR';
+    padding: 0 45px;
+}
+#header .gnb li a   {
+    display: block;
+}
+/* visual */
+#visual {
+    width: 100%;
+    height: 670px;
+    background: url(../images/visual.jpg) center top no-repeat;
+    background-size: 100% ;
+}
+#visual .text_box   {
+    width: 866px;
+    height: 400px;
+    margin: 77px 792px 0 0;
+    float: left;
+    transform: skewY(-10deg);
+}
+#visual .text_box .lar  {
+    color: #ffe04d ;
+    font-size: 130px;
+    font-family: 'JalnanGothic';
+}
+.text_box .mid    {
+    color: white;
+    font-size: 100px;
+    font-family: 'JalnanGothic';
+}
+
+/* section */
+#section_box    {
+    width: 100%;
+    background-color: #f8f8f8;
+}
+#section_box #section1   {
+    width: 100%;
+    background-color: white;
+}
+#section_box #section1 .map {
+    width: 426px;
+    height: 271px;
+    border-radius: 13px;
+    background: #f8f8f8;
+    margin: 290px 0 156px 0;
+    background: url(../images/secb.png);
+    float: left;
+}
+#section_box #section1 .map h2  {
+    width: 426px;
+    height: 71px;
+    text-align: center;
+    line-height: 71px;
+    font-family: 'TTLaundryGothicR';
+    font-size: 26px;
+}
+#section_box #section1 .map ul  {
+    width: 426px;
+    height: 71px;
+    text-align: center;
+}
+#section_box #section1 .map ul li   {
+    width: 426px;
+    height: 202px;
+    text-align: center;
+    line-height: 45px;
+}
+#section_box #section1 .map ul li a {
+    font-size: 20px;
+    font-family: 'TTLaundryGothicR';
+}
+#section_box #section1 .map ul li a span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#section_box #section1 .map ul li a span:hover {
+    color: red;
+}
+#section_box #section1 .brand {
+    width: 426px;
+    height: 271px;
+    border-radius: 13px;
+    background: #f8f8f8;
+    margin: 290px 0 0 32px;
+    background: url(../images/secb.png);
+    float: left;
+}
+#section_box #section1 .brand h2  {
+    width: 426px;
+    height: 71px;
+    text-align: center;
+    line-height: 71px;
+    font-family: 'TTLaundryGothicR';
+    font-size: 26px;
+}
+#section_box #section1 .brand ul  {
+    width: 426px;
+    height: 71px;
+    text-align: center;
+}
+#section_box #section1 .brand ul li   {
+    width: 426px;
+    height: 202px;
+    text-align: center;
+    line-height: 45px;
+}
+#section_box #section1 .brand ul li a {
+    font-size: 20px;
+    font-family: 'TTLaundryGothicR';
+}
+#section_box #section1 .honey {
+    width: 426px;
+    height: 271px;
+    border-radius: 13px;
+    background: #f8f8f8;
+    margin-top: 290px;
+    background: url(../images/secb.png);
+    float: right;
+}
+#section_box #section1 .honey h2  {
+    width: 426px;
+    height: 71px;
+    text-align: center;
+    line-height: 71px;
+    font-family: 'TTLaundryGothicR';
+    font-size: 26px;
+}
+#section_box #section1 .honey ul  {
+    width: 426px;
+    height: 71px;
+    text-align: center;
+}
+#section_box #section1 .honey ul li   {
+    width: 426px;
+    height: 202px;
+    text-align: center;
+    line-height: 45px;
+}
+#section_box #section1 .honey ul li a {
+    font-size: 20px;
+    font-family: 'TTLaundryGothicR';
+}
+/* section2 */
+
+#section_box #section2   {
+    width: 100%;
+    padding: 100px 0;
+    background: url(../images/secb4_06.jpg);
+    background-size:cover;
+}
+#section_box #section2 .ex   {
+    font-size: 26px;
+    margin-bottom: 45px;
+    text-align: center;
+    color: white;
+    font-family: 'TTLaundryGothicR';
+}
+#section_box #section2 .cont li   {
+    width: 426px;
+    height: 147px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background: white;
+    text-align: left;
+    float: left;
+}
+#section_box #section2 .cont li h3  {
+    font-size: 20px;
+    padding-top: 30px;
+    font-family: 'Pretendard-SemiBold';
+    text-align: left;
+    margin-left: 48px;
+}
+#section_box #section2 .cont li h3:hover    {
+    color: red;
+}
+#section_box #section2 .cont li p   {
+    width: 426px;
+    font-size: 16px;
+    margin-left: 48px;
+    margin-top: 20px;
+    font-family: 'Pretendard-Regular';
+}
+
+
+#section_box #section2 .cont li span   {
+    font-size: 18px;
+    margin-left: 48px;
+    font-family: 'Pretendard-Regular';
+
+}
+#section_box #section2 .cont li p img, 
+#section_box #section2 .cont li span img {
+    margin-right: 5px; /* 이미지와 텍스트 사이의 간격 */
+}
+#section_box #section2 .cont li a   {
+    display: block;
+}
+/* section3 */
+#section_box #section3   {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+#section_box #section3 .cont li {
+    width: 655px;
+    height: 171px;
+    border-radius: 15px;
+    background: white;
+    float: left;
+    margin-right: 30px;
+    overflow: hidden;
+    position: relative;
+}
+#section_box #section3 .cont li:last-child  {
+    margin-right: 0;
+}
+#section_box #section3 .cont li a   {
+    display: block;
+}
+#section_box #section3 .cont li h3  {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'TTLaundryGothicR';
+    margin-top: 53px;
+    margin-bottom: 14px;
+    
+}
+
+#section_box #section3 .cont li img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: wave 3s infinite linear;
+    opacity: 0.1;
+}
+#section_box #section3 .cont li img:nth-child(2) {
+    opacity: 0.5;
+    animation-delay: 0.7s;
+}
+#section_box #section3 .cont li img:nth-child(3)    {
+    opacity: 0.8;
+    animation-delay: 1.2s;
+}
+@keyframes wave {
+    0%  {left: 0;}
+    50%    {left: -50%; bottom: -30px;}
+    100%    {left: -100%; bottom: 0;}
+}
+#section_box #section3 .cont li p   {
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+    text-align: center;
+}
+#section_box #section3 .cont li p span    {
+    line-height: 14px;
+    text-align: center;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+
+/* section4 */
+
+#section_box #section4   {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #e7e7e7;
+}
+#section4 h2    {
+    text-align: center;
+    font-size: 26px;
+    margin : 40px auto;
+}
+#section4 ul.cont   {
+    display: grid;
+    grid-template-columns: 220px 220px 294px 223px 257px;
+    grid-template-rows: 209px 135px 135px 135px;
+    gap: 31px;
+   
+}
+
+#section4 .cont li  {
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size: cover; 
+}
+
+
+
+#section4 .cont h4 .tit {
+    width: 220px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#section4 .cont .content {
+    width: 220px;
+    margin-top: 10px; 
+    display: block; 
+    font-size: 14px; 
+    line-height: 1.5;
+    margin-bottom: 64px; 
+}
+#section4 .cont .second {
+    width: 220px;
+    display: block;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+#section4 .cont .second li {
+    display: block;
+    text-align: left;
+}
+
+#section4 .cont .second li span.lar {
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+}
+
+#section4 .cont .second li span.small {
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-size: 13px;
+    color: #929292;
+}
+#section4 .cont li.title:nth-child(1) {
+    grid-row: span 2;
+    background: white url(../images/story1.png) no-repeat;
+    padding: 23px 20px;
+}
+#section4 .cont li.title:nth-child(2) {
+    grid-row: span 2;
+    background: white url(../images/story2.png) no-repeat; 
+    padding: 23px 20px;
+}
+#section4 .cont li.title:nth-child(3) {grid-column: span 2; padding: 0;}
+#section4 .cont li.title:nth-child(4) {grid-row: span 3; padding: 0;}
+#section4 .cont li.title:nth-child(5) {padding: 0;}
+#section4 .cont li.title:nth-child(6) {grid-row: span 2; padding: 0;}
+#section4 .cont li.title:nth-child(7) {grid-column: span 2;background: white; background: url(../images/MOBE.png); 
+    padding: 23px 20px;}
+#section4 .cont li.title:nth-child(8) {padding: 0;}
+
+#section4 .cont a .conte {
+    width: 100%;
+    font-size: 16px; /* 필요한 경우 폰트 크기 조정 */
+    margin-top:10px; /* 제목과 붙어 있도록 상단 여백 제거 */
+}
+
+#section4 .cont li.title .tit {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#section4 .cont li.title .last {
+    font-size: 14px; 
+    margin-top: 20px;
+    color: gray;
+}
+/* footer */
+#footer {
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+#footer ul  {
+   padding: 100px 0;
+   width: 50%;
+   float: left;
+}
+#footer .tit {
+    width: 100%;
+    font-size: 24px;
+    float: left;
+    line-height: 35px;
+}
+#footer .cont    {
+    width: 100%;
+    font-size: 35px;
+    font-family: 'TTLaundryGothicR';
+    float: left;
+    line-height: 35px;
+}
+#footer li {
+    margin-bottom: 20px;
+}
+
+#footer p {
+    font-size: 16px;
+    line-height: 24px;
+}
+#footer .right  {
+    float: right;
+    width: 50%;
+    padding: 200px 0;
+}
+#footer .right li  {
+    line-height: 24px;
+    text-align: right;
+    font-size: 14px;
+    word-break: keep-all;
+}
